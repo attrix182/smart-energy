@@ -1,0 +1,34 @@
+<!-- Toolbar -->
+<div class="navbar bg-dark text-white">
+  <h3 class="title">Smart Energy</h3>
+</div>
+
+<div class="container mt-4">
+  <div *ngFor="let device of devices">
+    <div class="card text-center mt-3">
+      <div class="card-header">
+        {{ device.name }}
+      </div>
+      <div class="row m-1">
+        <div class="col">
+          <button
+            class="btn btn-success btn-block"
+            (click)="onDevice(device.ip, device.name)"
+          >
+            ON
+          </button>
+        </div>
+        <div class="col">
+          <button
+            class="btn btn-danger btn-block"
+            (click)="offDevice(device.ip, device.name)"
+          >
+            OFF
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="btn btn-dark mt-3 btn-add" (click)="addDevice()">+</button>
+</div>

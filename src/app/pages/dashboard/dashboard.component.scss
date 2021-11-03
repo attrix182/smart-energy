@@ -1,0 +1,20 @@
+.btn-add{
+    border-radius: 50px;
+    display: block; 
+    margin: 0 auto;
+    font-size: 1.4em;
+}
+
+.card{
+    background: rgba( 255, 255, 255, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.card-header{
+background-color: #f0f1f3;
+font-size: 1.4em;
+}
