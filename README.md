@@ -1,10 +1,7 @@
 # SmartEnergy
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
-
 
 Aplicacion web desarrollada para correr en una raspberry pi, con el objetivo de sincronizarse con varios modulos node mcu (esp 8266) para automatizar luces, y demas electronicos (en proceseo)
-
 
 ![interface](https://user-images.githubusercontent.com/44885834/140168911-a87ab4bd-7316-428d-bc81-931f6ccac5fc.jpg)
 
@@ -17,9 +14,13 @@ Interfaz de Dashboard de dispostivos con acciones de encendido y apagado
 
 
 # Segunda iteracion
-Investigando opte porque cada nodedmcu consulte el estado de un documento asigando a su funcion
+Investigando cambie el enfoque del proyecto, en lugar de hacer que cada NodeMcu haga un servidor web y hacer peticiones a cada uno individualmente.
+Lo que hice fue crear en Firebase Real Time, cada uno de los dispositivos y una variable de estado, la cual modifico desde la web app.
+Y mediante una biblioteca cada NodeMcu consulta su estado en Firebase
 
-![Captura de pantalla 2021-11-06 211646](https://user-images.githubusercontent.com/44885834/140627759-92f48fc4-9fe6-41f7-b3ad-4242c9844452.jpg)
+![Captura de pantalla 2021-11-06 21![Captura de pantalla 2021-11-07 120436](https://user-images.githubusercontent.com/44885834/140650560-1546cb29-d064-414c-8e3e-0fc40b87f644.jpg)
+1646](https://user-images.githubusercontent.com/44885834/140627759-92f48fc4-9fe6-41f7-b3ad-4242c9844452.jpg)
 
+Tambien cambie un poco el diseño y el alta solo requiere nombre ahora
 ![Captura de pantalla 2021-11-06 211624](https://user-images.githubusercontent.com/44885834/140627766-49fd11cb-6c71-4012-ba4b-1fd5bb1342f4.jpg)
 ![35250e4b-116b-43c8-a6ab-a571adc0751d](https://user-images.githubusercontent.com/44885834/140627770-0b84779f-8478-44ac-97d3-43c58c529529.jpg)
